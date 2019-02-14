@@ -64,7 +64,6 @@ func increaseBrightness(step int) error {
 		}
 
 		errorCheck(ioutil.WriteFile(currentBrightnessLocation, []byte(strconv.Itoa(newValue)), 0644))
-		// fmt.Println([]byte(strconv.Itoa(newValue)))
 	}
 	return nil
 }
@@ -101,7 +100,6 @@ func decreaseBrightness(step int) error {
 		}
 
 		errorCheck(ioutil.WriteFile(currentBrightnessLocation, []byte(strconv.Itoa(newValue)), 0644))
-		// fmt.Println(newValue)
 	}
 
 	return nil
